@@ -33,15 +33,13 @@ conda create -n dsm-mia python=3.9
 conda activate dsm-mia
 pip install -r requirements.txt
 ```
-Main dependencies
+### 🧩 Main Dependencies
+- PyTorch >= 1.13  
+- NumPy, pandas, matplotlib, seaborn  
+- scikit-learn, tqdm
 
-PyTorch >= 1.13
-
-NumPy, pandas, matplotlib, seaborn
-
-scikit-learn, tqdm
-
-📂 Project Structure
+##📂 Project Structure
+```bash
 DSM-MIA/
 │
 ├── src/
@@ -54,25 +52,29 @@ DSM-MIA/
 ├── evaluate/                      # Evaluation results
 ├── requirements.txt
 └── README.md
-
-🚀 Quick Start
-1️⃣ Train a target federated model
+```
+##🚀 Quick Start
+###1️⃣ Train a target federated model
+```bash
 python train_fed_model.py --dataset cifar10 --model resnet18 --n_clients 5
-
-2️⃣ Extract dual-source metrics
+```
+###2️⃣ Extract dual-source metrics
+```bash
 python feature_extraction.py --dataset cifar10 --rounds 60
-
-3️⃣ Train the attack model
+```
+###3️⃣ Train the attack model
+```bash
 python train_attack_model.py --model RNN_Attention --epochs 50
-
-4️⃣ Evaluate attacks
+```
+###4️⃣ Evaluate attacks
+```bash
 python attack_comparison.py --metric AUC --save_fig True
-
-📊 Results
+```
+##📊 Results
 Dataset	Model	Attack	AUC	TPR@FPR=0.001
 CIFAR-10	ResNet-18	DSM-MIA	0.874	0.523
 CIFAR-100	ResNet-18	DSM-MIA	0.812	0.465
-📚 Citation
+##📚 Citation
 
 If you find our work helpful, please cite:
 
@@ -83,11 +85,11 @@ If you find our work helpful, please cite:
   year={2025}
 }
 
-💡 Contact
+##💡 Contact
 
 If you have questions or issues, please open an issue or contact:
-📧 your.email@domain.com
+##📧 your.email@domain.com
 
-📜 License
+##📜 License
 
 This project is licensed under the MIT License.
