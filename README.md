@@ -19,10 +19,10 @@ Unlike traditional MIAs that only determine whether a sample was used in trainin
 ---
 
 ##  Key Features
-- ✅ Dual-source metric construction (global + local model metrics)  
-- 🔄 Time-series modeling via RNN/Transformer with attention  
-- 🧮 Multi-class attack (member + client attribution)  
-- 📈 Comprehensive evaluation across datasets and baselines  
+-  Dual-source metric construction (global + local model metrics)  
+-  Time-series modeling via RNN/Transformer with attention  
+-  Multi-class attack (member + client attribution)  
+-  Comprehensive evaluation across datasets and baselines  
 
 ---
 
@@ -53,7 +53,7 @@ DSM-MIA/
 ├── requirements.txt
 └── README.md
 ```
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1.Train a target federated model
 ```bash
@@ -72,7 +72,7 @@ python train_attack_model.py --model RNN_Attention --epochs 50
 python attack_comparison.py --metric AUC --save_fig True
 ```
 ##  Results
-| Dataset | Model | Attack | **AUC** TPR@FPR=0.001 |
+| Dataset | Model | Attack |  **AUC** |  **TPR@FPR=0.001** |
 |-------------|-----------|-----------|-------------|----------------------|
 | CIFAR-10    | ResNet-18 | DSM-MIA   | **0.874**   | **0.523** |
 | CIFAR-100   | ResNet-18 | DSM-MIA   | **0.812**   | **0.465** |
