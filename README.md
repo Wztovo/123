@@ -31,7 +31,7 @@ Unlike traditional MIAs that only determine whether a sample was used in trainin
 conda create -n dsm-mia python=3.9
 conda activate dsm-mia
 pip install -r requirements.txt
-
+---
 ### 🧩 Main Dependencies
 - PyTorch >= 1.13  
 - NumPy, pandas, matplotlib, seaborn  
