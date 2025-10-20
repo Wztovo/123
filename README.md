@@ -1,16 +1,39 @@
-# Dual-Source Metric-Based Client-Level Membership Inference Attack in Federated Learning
-## 📂 Project Structure
+# Dual-Source Metric-Based Multi-Client Membership Inference Attack (DSM-MIA)
+
+Official implementation of the paper:  
+**"Dual-Source Metric-Based Multi-Client Membership Inference Attack in Federated Learning"**
+
+[[Paper]](https://arxiv.org/abs/xxxx.xxxxx) | [[Project Page]](https://github.com/yourname/DSM-MIA)
+
+---
+
+## 🌟 Overview
+This repository provides the official implementation of **DSM-MIA**, a novel membership inference attack designed for **federated learning (FL)**.  
+Unlike traditional MIAs that only determine whether a sample was used in training, DSM-MIA **identifies which specific client** in FL owns the sample.
+
+<p align="center">
+  <img src="assets/framework.png" width="700"/>
+</p>
+
+---
+
+## 🧩 Key Features
+- ✅ Dual-source metric construction (global + local model metrics)  
+- 🔄 Time-series modeling via RNN/Transformer with attention  
+- 🧮 Multi-class attack (member + client attribution)  
+- 📈 Comprehensive evaluation across datasets and baselines  
+
+---
+
+## ⚙️ Environment Setup
 
 ```bash
-DSM-MIA/
-│
-├── src/
-│   ├── train_attack_model.py      # RNN/Transformer-based attack model
-│   ├── feature_extraction.py      # Construct dual-source metric sequences
-│   ├── utils.py                   # Helper functions
-│
-├── draw_pict/                     # Visualization scripts
-├── saved_mia_models/              # Trained attack models
-├── evaluate/                      # Evaluation results
-├── requirements.txt
-└── README.md
+conda create -n dsm-mia python=3.9
+conda activate dsm-mia
+pip install -r requirements.txt
+
+### 🧩 Main Dependencies
+- **PyTorch** >= 1.13  
+- **NumPy**, **pandas**, **matplotlib**, **seaborn**  
+- **scikit-learn**, **tqdm**
+
