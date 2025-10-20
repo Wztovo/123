@@ -36,7 +36,9 @@ pip install -r requirements.txt
 - PyTorch >= 1.13  
 - NumPy, pandas, matplotlib, seaborn  
 - scikit-learn, tqdm
+
 ---
+
 ## 🚀 Quick Start
 ###1️⃣ Train a target federated model
 ###2️⃣ Extract dual-source metrics
