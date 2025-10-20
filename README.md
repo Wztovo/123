@@ -27,13 +27,13 @@ Unlike traditional MIAs that only determine whether a sample was used in trainin
 
 
 ## ⚙️ Environment Setup
-
 ```bash
 conda create -n dsm-mia python=3.9
 conda activate dsm-mia
 pip install -r requirements.txt
 
 ---
+
 
 ## 🚀 Quick Start
 
