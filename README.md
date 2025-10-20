@@ -38,7 +38,7 @@ pip install -r requirements.txt
 - NumPy, pandas, matplotlib, seaborn  
 - scikit-learn, tqdm
 
-##📂 Project Structure
+## 📂 Project Structure
 ```bash
 DSM-MIA/
 │
@@ -53,44 +53,45 @@ DSM-MIA/
 ├── requirements.txt
 └── README.md
 ```
-##🚀 Quick Start
+## 🚀 Quick Start
 
-###1️⃣ Train a target federated model
+### 1️⃣ Train a target federated model
 ```bash
 python train_fed_model.py --dataset cifar10 --model resnet18 --n_clients 5
 ```
-###2️⃣ Extract dual-source metrics
+### 2️⃣ Extract dual-source metrics
 ```bash
 python feature_extraction.py --dataset cifar10 --rounds 60
 ```
-###3️⃣ Train the attack model
+### 3️⃣ Train the attack model
 ```bash
 python train_attack_model.py --model RNN_Attention --epochs 50
 ```
-###4️⃣ Evaluate attacks
+### 4️⃣ Evaluate attacks
 ```bash
 python attack_comparison.py --metric AUC --save_fig True
 ```
-##📊 Results
-Dataset	Model	Attack	AUC	TPR@FPR=0.001
-CIFAR-10	ResNet-18	DSM-MIA	0.874	0.523
-CIFAR-100	ResNet-18	DSM-MIA	0.812	0.465
-##📚 Citation
+## 📊 Results
+| 🧪 Dataset | 🧠 Model | ⚔️ Attack | 📈 **AUC** | 🎯 **TPR@FPR=0.001** |
+|-------------|-----------|-----------|-------------|----------------------|
+| CIFAR-10    | ResNet-18 | DSM-MIA   | **0.874**   | **0.523** |
+| CIFAR-100   | ResNet-18 | DSM-MIA   | **0.812**   | **0.465** |
+## 📚 Citation
 
 If you find our work helpful, please cite:
-
+```bash
 @article{yourname2025dsmmia,
   title={Dual-Source Metric-Based Multi-Client Membership Inference Attack in Federated Learning},
   author={Your Name and ...},
   journal={arXiv preprint arXiv:xxxx.xxxxx},
   year={2025}
 }
-
-##💡 Contact
+```
+## 💡 Contact
 
 If you have questions or issues, please open an issue or contact:
 ##📧 your.email@domain.com
 
-##📜 License
+## 📜 License
 
 This project is licensed under the MIT License.
