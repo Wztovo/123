@@ -25,7 +25,7 @@ Unlike traditional MIAs that only determine whether a sample was used in trainin
 
 ---
 
-```markdown
+
 ## ⚙️ Environment Setup
 
 ```bash
