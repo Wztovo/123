@@ -33,7 +33,15 @@ conda activate dsm-mia
 pip install -r requirements.txt
 
 ### 🧩 Main Dependencies
-- **PyTorch** >= 1.13  
-- **NumPy**, **pandas**, **matplotlib**, **seaborn**  
-- **scikit-learn**, **tqdm**
+- PyTorch >= 1.13  
+- NumPy, pandas, matplotlib, seaborn  
+- scikit-learn, tqdm
 
+## 🚀 Quick Start
+###1️⃣ Train a target federated model
+###2️⃣ Extract dual-source metrics
+###3️⃣ Train the attack model
+###4️⃣ Evaluate attacks
+
+## 📊 Results
+## 📚 Citation
