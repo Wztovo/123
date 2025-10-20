@@ -54,6 +54,7 @@ DSM-MIA/
 └── README.md
 ```
 ##🚀 Quick Start
+
 ###1️⃣ Train a target federated model
 ```bash
 python train_fed_model.py --dataset cifar10 --model resnet18 --n_clients 5
